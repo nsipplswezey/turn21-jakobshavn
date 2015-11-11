@@ -785,7 +785,7 @@
 
         if (d.first) {
             if (videoNode) {
-                volume = d3.event.rect.top < fixTop + fadeTop ? Math.max(0, Math.min(1, 1 - (d3.event.rect.top - fixTop) / fadeTop)) : 0;
+                //volume = d3.event.rect.top < fixTop + fadeTop ? Math.max(0, Math.min(1, 1 - (d3.event.rect.top - fixTop) / fadeTop)) : 0;
                 var play = d3.event.rect.top <= fixTop + fadeTop;
                 if (videoNode.paused) {
                     if (play && (!d.animation || (videoNode.currentTime < videoNode.duration && volume > .8))) {
@@ -816,7 +816,7 @@
 
         if (d.last) {
             if (videoNode) {
-                volume = d3.event.rect.bottom < fadeBottom ? Math.max(0, Math.min(1, 1 - (fadeBottom - d3.event.rect.bottom) / fadeTop)) : 1;
+                //volume = d3.event.rect.bottom < fadeBottom ? Math.max(0, Math.min(1, 1 - (fadeBottom - d3.event.rect.bottom) / fadeTop)) : 1;
                 var play = d3.event.rect.bottom >= fadeBottom - fadeTop;
                 if (videoNode.paused) {
                     if (play && (!d.animation || (videoNode.currentTime < videoNode.duration && volume > .8))) {
